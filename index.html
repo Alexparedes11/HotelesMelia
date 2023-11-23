@@ -3,22 +3,55 @@
 <head>
   <title>Mi página con Grid</title>
   <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+
+    @root{
+        --color-primario: #333;
+        --color-secundario: #fff;
+    }
+
     body {
       display: grid;
-      grid-template-rows: auto 1fr auto;
-      min-height: 100vh;
-      margin: 0;
-      padding: 0;
+      grid-template-rows: 15vh auto 10vh;
+      height: 100vh;
+      margin: 0%;
+      padding: 0%;
     }
 
     header {
-      background-color: #333;
+      display: grid;
+      grid-template-columns: 3fr 5fr 4fr;
+      background-color: var(--color-secundario);
       color: #fff;
-      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      padding-left: 3vh;
+    }
+
+    .logo {
+        width: 70%;
+        
     }
 
     main {
       padding: 20px;
+    }
+
+    .menu a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5em;
+        font-family: sans-serif;
+    }
+
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 1vh;
+        text-align: center;
     }
 
     footer {
@@ -30,11 +63,19 @@
 </head>
 <body>
   <header>
-    <h1>Mi página con Grid</h1>
+    <img class="logo" src="./src/melialogo.png"/>
+    <div class="vacio"></div>
+    <div class="menu">
+        <a href="#">Family</a>
+        <a href="#">Wellness</a>
+        <a href="#">Bunisses</a>
+        <a href="#">Sport</a>
+    </div>
+    
   </header>
   
   <main>
-    <!-- Contenido de la página -->
+    
   </main>
   
   <footer>
