@@ -1,85 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Mi página con Grid</title>
-  <style>
-    *{
-        margin: 0%;
-        padding: 0%;
-    }
+  <head>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Mi página con Grid</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./src/melialogo.png" />
+      <div class="vacio"></div>
+      <div class="menu">
+        <div class="botn">
+          <a href="#">Family</a>
+        </div>
+        <div class="botn">
+          <a href="#">Wellness</a>
+        </div>
+        <div class="botn">
+          <a href="#">Bunisses</a>
+        </div>
+        <div class="botn">
+          <a href="#">Sport</a>
+        </div>
+      </div>
+    </header>
 
-    @root{
-        --color-primario: #333;
-        --color-secundario: #fff;
-    }
+    <main>
+      <div class="general">
+        <div class="card">
+          <picture>
+            <source
+              srcset="
+                https://alejandroimagenes.blob.core.windows.net/imagenes/sport1_s.webp 487w,
+                https://alejandroimagenes.blob.core.windows.net/imagenes/sport1_m.webp 990w,
+                https://alejandroimagenes.blob.core.windows.net/imagenes/sport1_l.webp 1400w
+              "
+            />
 
-    body {
-      display: grid;
-      grid-template-rows: 15vh auto 10vh;
-      height: 100vh;
-      margin: 0%;
-      padding: 0%;
-    }
+            <img
+              src="https://alejandroimagenes.blob.core.windows.net/imagenes/sport1_l.jpg"
+              alt="Sports1"
+              srcset="
+                https://alejandroimagenes.blob.core.windows.net/imagenes/sport1_s.jpg 454w,
+                https://alejandroimagenes.blob.core.windows.net/imagenes/sport1_m.jpg 938w,
+                https://alejandroimagenes.blob.core.windows.net/imagenes/sport1_l.jpg 1400w
+              "
+            />
+          </picture>
+          <div class="cardbody">
+            <h5 class="titulo">Nombre categoria</h5>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+        </div>
 
-    header {
-      display: grid;
-      grid-template-columns: 3fr 5fr 4fr;
-      background-color: var(--color-secundario);
-      color: #fff;
-      justify-content: center;
-      align-items: center;
-      padding-left: 3vh;
-    }
+        <div class="card">
+          <img src="./src/melialogo .png" alt="" />
+          <div class="cardbody">
+            <h5 class="titulo">Nombre categoria</h5>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+        </div>
 
-    .logo {
-        width: 70%;
-        
-    }
+        <div class="card">
+          <img src="./src/melialogo .png" alt="" />
+          <div class="cardbody">
+            <h5 class="titulo">Nombre categoria</h5>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+        </div>
 
-    main {
-      padding: 20px;
-    }
+        <div class="card">
+          <img src="./src/melialogo .png" alt="" />
+          <div class="cardbody">
+            <h5 class="titulo">Nombre categoria</h5>
+            <a href="#" class="btn">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    .menu a{
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.5em;
-        font-family: sans-serif;
-    }
-
-    .menu{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin: 1vh;
-        text-align: center;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img class="logo" src="./src/melialogo.png"/>
-    <div class="vacio"></div>
-    <div class="menu">
-        <a href="#">Family</a>
-        <a href="#">Wellness</a>
-        <a href="#">Bunisses</a>
-        <a href="#">Sport</a>
-    </div>
-    
-  </header>
-  
-  <main>
-    
-  </main>
-  
-  <footer>
-    <p>© 2022 Mi página con Grid. Todos los derechos reservados.</p>
-  </footer>
-</body>
+    <footer>
+      <p>© 2022 Melia Hotels International</p>
+    </footer>
+  </body>
 </html>
