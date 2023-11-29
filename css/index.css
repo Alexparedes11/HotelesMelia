@@ -29,10 +29,11 @@
     justify-content: center;
     align-items: center;
     padding-left: 4vh;
+    
   }
 
   .logo {
-    width: 20vw;
+    width: 40vh;
   }
 
   main {
@@ -124,3 +125,36 @@
     text-decoration: none;
     color: var(--color-negro);
   }
+
+  
+@media (max-width: 1120px) {
+
+  .menu a{
+    font-size: 3.4vh;
+  }
+
+  .logo{
+    width: 40vh;
+  }
+  
+}
+
+@media (max-width: 950px) {
+
+  .general {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .card{
+    width: 40vw;
+    grid-template-rows: 5fr 1fr;
+  }
+
+  .card img{
+    height: 30vw;
+    width: 40vw;
+  }
+
+
+}
