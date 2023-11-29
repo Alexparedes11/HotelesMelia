@@ -1,8 +1,17 @@
 #contenedor-licenses {
-    
+    background-color: #fff;
+    display: grid;
+    padding-left: 3%;
+    border-radius: 10px;
+    border: solid 1.8px #000;
+    width: 53vw;
+    margin-left: 2.7vw;
+    text-align: center;
 }
 
 .licenses {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align:left;
+    padding: 2%;
 }
