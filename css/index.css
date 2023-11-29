@@ -7,6 +7,7 @@
     --color-primario: #878787;
     --color-secundario: #fff;
     --color-negro: #000;
+    --color-hover: #ccc8c8;
   }
 
   body {
@@ -45,7 +46,7 @@
   .menu a {
     text-decoration: none;
     color: var(--color-primario);
-    font-size: 3vh;
+    font-size: 1.8vw;
     font-family: sans-serif;
     text-align: center;
   }
@@ -96,6 +97,7 @@
 
   h5{
     font-size: 1.5vw;
+    text-decoration: none;
   }
 
   .btn{
@@ -110,4 +112,13 @@
 
   .cardbody{
     height: 5vh;
+  }
+
+  .card:hover{
+    background-color: var(--color-hover);
+  }
+
+  a{
+    text-decoration: none;
+    color: var(--color-negro);
   }
