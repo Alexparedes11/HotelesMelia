@@ -12,6 +12,7 @@
 .licenses {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1vw;
     text-align:left;
     padding: 2%;
 }
