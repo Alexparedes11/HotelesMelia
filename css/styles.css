@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+:root {
+  --color-primario: #878787;
+  --color-secundario: #fff;
+  --color-negro: #000;
+  --color-hover: #ccc8c8;
+}
+
+@font-face {
+  font-family: "iconosmelia";
+  src:url("../fonts/iconosmelia.eot");
+  src:url("../fonts/iconosmelia.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/iconosmelia.woff") format("woff"),
+    url("../fonts/iconosmelia.ttf") format("truetype"),
+    url("../fonts/iconosmelia.svg#iconosmelia") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[class^="icon-"]:before,
+[class*="icon-"]:before {
+  font-family: "iconosmelia" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  font-size: 32px;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bars-solid:before {
+  content: "\61";
+}
+.icon-mail-line:before {
+  content: "\62";
+}
+.icon-breakfast:before {
+  content: "\63";
+}
+.icon-num-persons:before {
+  content: "\64";
+}
+.icon-bx-dumbbell:before {
+  content: "\65";
+}
+.icon-parking:before {
+  content: "\66";
+}
+.icon-bx-restaurant:before {
+  content: "\67";
+}
+.icon-rectangle-xmark-solid:before {
+  content: "\68";
+}
+.icon-bx-swim:before {
+  content: "\69";
+}
+.icon-share-line:before {
+  content: "\6a";
+}
+.icon-bxs-dog:before {
+  content: "\6b";
+}
+.icon-twitter-x-fill:before {
+  content: "\6c";
+}
+.icon-bxs-star:before {
+  content: "\6d";
+}
+.icon-calendar:before {
+  content: "\6e";
+}
+.icon-city:before {
+  content: "\6f";
+}
+.icon-user-solid:before {
+  content: "\70";
+}
+.icon-facebook-circle-line:before {
+  content: "\71";
+}
+.icon-house-solid:before {
+  content: "\72";
+}
+.icon-instagram-line:before {
+  content: "\73";
+}
+.icon-magnifying-glass-solid:before {
+  content: "\74";
+}

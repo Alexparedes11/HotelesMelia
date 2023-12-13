@@ -1,0 +1,23 @@
+:root {
+    --color-primario: #878787;
+    --color-secundario: #fff;
+    --color-negro: #000;
+    --color-hover: #ccc8c8;
+}
+
+[class^="icon-"], [class*="icon-"] {
+    height: 32px;
+    width: 32px;
+    display: inline-block; 
+}
+
+#Icon{
+    font-weight: bold;
+}
+
+.contenedor{
+    display: grid;
+    background-color: var(--color-secundario);
+    grid-template-rows: repeat(2, 1fr);
+    width: 60vw;
+}

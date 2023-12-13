@@ -56,7 +56,7 @@
 
   .menu {
     display: grid;
-    grid-template-columns: 1fr auto auto auto;
+    grid-template-columns: 1fr auto auto auto auto;
     text-align: center;
     gap: 50px;
     text-align: right;
