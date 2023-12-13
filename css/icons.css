@@ -18,6 +18,18 @@
 .contenedor{
     display: grid;
     background-color: var(--color-secundario);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr;
     width: 60vw;
+    text-align: center;
+    padding: 1.6vh;
+    border-radius: 10px;
+}
+
+.contenedorpequeño{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contenedor:last-child{
+    margin-top: 3vh;
 }
