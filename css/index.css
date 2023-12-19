@@ -96,6 +96,14 @@
     width: 1130px;
   }
 
+  .general2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 33px;
+    width: 740px;
+  }
+
   .card{
     background-color: var(--color-secundario);
     width: 350px;
@@ -168,6 +176,16 @@
 
   /*Estilos Reponsive*/
 
+@media screen and (max-width:1250px){
+  .general{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 740px;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width:850px){
      
      input:checked ~ .navbar{
@@ -178,6 +196,14 @@
      }
 
      .general{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      width: 350px;
+      justify-content: center;
+    }
+
+    .general2{
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
