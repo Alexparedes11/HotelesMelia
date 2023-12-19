@@ -20,3 +20,12 @@
 #wellness{
     font-weight: bold;
 }
+
+.licence{
+    text-align: center;
+}
+
+.video-message{
+    background-color: #ccc8c8;
+    opacity: 60%;
+}
