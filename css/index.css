@@ -8,20 +8,23 @@
 
   :root {
     --color-primario: #878787;
+    --color-hover-primario: #444444;
     --color-secundario: #fff;
     --color-negro: #000;
     --color-hover: #ccc8c8;
+    --color-hover-secundario: #e4dfdf;
   }
 
   body {
     display: grid;
-    grid-template-rows: 15vh auto 10vh;
-    height: 100vh;
+    grid-template-rows: 100px auto 60px;
+    height: 100%;
     margin: 0%;
     padding: 0%;
     background-color: #272525;
-
   }
+
+  /*Estilos Header*/
 
   header {
     display: grid;
@@ -30,99 +33,86 @@
     color: var(--color-secundario);
     justify-content: center;
     align-items: center;
-    padding-left: 4vh;
-    
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .logo {
-    width: 40vh;
+    width: 250px;
   }
-
-  main {
-    padding: 20px;
-    justify-self: center;
-  }
-
-  .titulo {
-    padding: 10px;
-  }
-
+  
   .menu a {
     text-decoration: none;
     color: var(--color-primario);
-    font-size: 1.8vw;
+    font-size: 18px;
     text-align: center;
+    transition: 0.2s linear;
   }
 
-  .menu {
+  .menu a:hover{
+    color: var(--color-hover-primario);
+  }
+
+  .navbar{
     display: grid;
     grid-template-columns: 1fr auto auto auto auto;
     text-align: center;
     gap: 50px;
-    text-align: right;
-    margin-right: 4vh;
+    
   }
 
-  footer {
-    background-color: var(--color-secundario);
-    padding: 12px;
-    text-align: center;
+  input {
+    display: none;
   }
 
-
-  .card{
-    background-color: var(--color-secundario);
-    width: 25vw;
-    border-radius: 10px;
-    border: solid 1.8px var(--color-negro);
-    display: grid;
-    grid-template-rows: 4fr 1fr;
-    justify-self: center;
-    text-align: center;
+  label{
+    display: none;
+    color: var(--color-primario);
   }
 
-  .card img{
-    height: 15vw;
-    width: 25vw;
-    background-color: #000;
-    border-radius: 10px 10px 0px 0px;  
+  /*Estilos Main*/
+
+  main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   .general{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 3vh;
-    width: 60vw;
-    
+    gap: 33px;
+    width: 740px;
   }
 
-  h5{
-    font-size: 1.5vw;
-    text-decoration: none;
-  }
-
-  .btn{
-    background-color: var(--color-primario);
-    border: solid 1px var(--color-negro);
-    padding: 1vh;
+  .card{
+    background-color: var(--color-secundario);
+    width: 350px;
     border-radius: 10px;
-    text-decoration: none;
-    color: var(--color-negro);
-    height: 2vh;
-  }
-
-  .botn:hover{
-    font-weight: bold;
-    font-size: 1.5vw;
-  }
-
-  .cardbody{
-    height: 5vh;
+    border: solid 2px var(--color-negro);
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    justify-self: center;
+    text-align: center;
   }
 
   .card:hover{
     background-color: var(--color-hover);
+  }
+
+  .card img{
+    height: 200px;
+    width: 350px;
+    background-color: #000;
+    border-radius: 6px 6px 0px 0px;
+    border-bottom: solid 2px var(--color-negro) ;  
+  }
+
+  .titulo {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
   }
 
   a{
@@ -134,13 +124,24 @@
     font-weight: bold;
   }
 
+  /*Estilos footer*/
+
+  footer {
+    background-color: var(--color-secundario);
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   footer a, footer p{
-    font-size: 2vh;
+    font-size: 13px;
     font-weight: bolder;
     gap: 10px;
     cursor: default;
     color: var(--color-primario);
-    transition: 0.5s linear;
+    transition: 0.8s linear;
   }
 
   footer a:hover{
@@ -148,19 +149,81 @@
     color: var(--color-negro);
   }
 
-  
-@media (max-width: 1120px) {
+  /*Estilos Reponsive*/
 
-  .menu a{
-    font-size: 3.4vh;
-  }
+@media screen and (max-width:850px){
+     
+     input:checked ~ .navbar{
+        display: block;
+     }
+     .navbar{
+        display: block;
+     }
 
-  .logo{
-    width: 40vh;
-  }
-  
+     .general{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      width: 350px;
+      justify-content: center;
+    }
+
+    main{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .navbar{
+      position: absolute;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background: var(--color-secundario);
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      display: none;
+      left: 0px;
+      top: 100px;
+      width: 100%;
+    }
+
+    .botn:hover{
+      background-color: var(--color-hover-secundario);
+    }
+
+    .iconomenu{
+      color: var(--color-primario);
+      font-size: 30px;
+      display: inline-block;
+      position: absolute;
+      justify-content: center;
+      right: 30px;
+      top: 28px;
+      transition: 0.5s linear;
+    }
+
+    .iconomenu:hover{
+      cursor: pointer;
+      color: var(--color-hover-primario);
+    }
+
 }
+  
 
+  
+
+  /*
+  .btn{
+    background-color: var(--color-primario);
+    border: solid 1px var(--color-negro);
+    padding: 1vh;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color-negro);
+    height: 2vh;
+  }
+  */
+/*
 @media (max-width: 950px) {
 
   .general {
@@ -180,3 +243,4 @@
 
 
 }
+*/
