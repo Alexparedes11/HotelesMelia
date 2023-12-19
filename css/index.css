@@ -37,6 +37,16 @@
     padding-right: 30px;
   }
 
+  .video-message {
+    padding: 10px; 
+    border-radius: 10px; 
+    position: absolute; 
+    top: 85%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    border: solid 1px black;
+  }
+
   .logo {
     width: 250px;
   }
